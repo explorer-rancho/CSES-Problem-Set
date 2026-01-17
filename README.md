@@ -1,9 +1,10 @@
-#My Solutions to CSES problem sets 
+# My Solutions to CSES problem sets 
 This repository is to track my progress and record my approaches to the problems at different points of time.
 
 |Problem Set|[Solved-Total](https://img.shields.io/badge/Solved-Total-brightgreen)|
 |---|:------:|
-|Introductory Problems|
+|Introductory Problems|[https://img.shields.io/badge/dynamic/json?label=Introductory&query=$.introductory_problems&suffix=%20solved&color=green&url=https://github.com/explorer-rancho/CSES-Problem-Set/blob/main/progress.json
+]
 |Sorting and Searching|
 |Dynamic Programming|
 |Graph Algorithms|
