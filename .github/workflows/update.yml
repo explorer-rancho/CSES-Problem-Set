@@ -1,0 +1,23 @@
+name: Update CSES badges
+
+on:
+  push:
+    paths:
+      - "**/*.cpp"
+      - "**/*.py"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+      - run: python updateProgress.py
+      - run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add progress.json
+          git commit -m "Update CSES progress" || exit 0
+          git push
